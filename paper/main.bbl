@@ -1,0 +1,290 @@
+\begin{thebibliography}{36}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aaronson et~al.(2021)Aaronson, Hartley, and Mazumder]{aaronson2021}
+Daniel Aaronson, Daniel Hartley, and Bhashkar Mazumder.
+\newblock The effects of the 1930s {HOLC} ``redlining'' maps.
+\newblock \emph{American Economic Journal: Economic Policy}, 13\penalty0
+  (4):\penalty0 355--392, 2021.
+\newblock \doi{10.1257/pol.20190414}.
+
+\bibitem[Aizer et~al.(2018)Aizer, Currie, Simon, and Vivier]{aizer2018}
+Anna Aizer, Janet Currie, Peter Simon, and Patrick Vivier.
+\newblock Do low levels of blood lead reduce children's future test scores?
+\newblock \emph{American Economic Journal: Applied Economics}, 10\penalty0
+  (1):\penalty0 307--341, 2018.
+\newblock \doi{10.1257/app.20160404}.
+
+\bibitem[Aoki et~al.(2016)Aoki, Brody, Flegal, Fakhouri, Axelrad, and
+  Parker]{aoki2016}
+Yutaka Aoki, Debra~J. Brody, Katherine~M. Flegal, Tala H.~I. Fakhouri,
+  Daniel~A. Axelrad, and Jennifer~D. Parker.
+\newblock Blood lead and other metal biomarkers as risk factors for
+  cardiovascular disease mortality.
+\newblock \emph{Medicine}, 95\penalty0 (1):\penalty0 e2223, 2016.
+\newblock \doi{10.1097/MD.0000000000002223}.
+
+\bibitem[Bellinger(2008)]{bellinger2008}
+David~C. Bellinger.
+\newblock Very low lead exposures and children's neurodevelopment.
+\newblock \emph{Current Opinion in Pediatrics}, 20\penalty0 (2):\penalty0
+  172--177, 2008.
+\newblock \doi{10.1097/MOP.0b013e3282f4f97b}.
+
+\bibitem[Brown et~al.(2020)Brown, Lynch, Belova, Klein, and Chiger]{brown2020}
+Lauren Brown, Meghan Lynch, Anna Belova, Ryan Klein, and Andrea Chiger.
+\newblock Developing a health impact model for adult lead exposure and
+  cardiovascular disease mortality.
+\newblock \emph{Environmental Health Perspectives}, 128\penalty0 (9):\penalty0
+  097005, 2020.
+\newblock \doi{10.1289/EHP6552}.
+
+\bibitem[{Chicago Department of Water Management}(2025)]{cdwm2024ccr}
+{Chicago Department of Water Management}.
+\newblock 2024 {Water Quality Report}.
+\newblock Technical report, City of Chicago, 2025.
+\newblock Consumer Confidence Report, available at chicago.gov, Department of
+  Water Management.
+
+\bibitem[{Circle of Blue}(2024)]{cob2024}
+{Circle of Blue}.
+\newblock New {EPA} federal water rules put {Chicago} on track to replace all
+  lead pipes within 20 years, 2024.
+\newblock URL
+  \url{https://www.circleofblue.org/2024/world/new-epa-federal-water-rules-put-chicago-on-track-to-replace-all-lead-pipes-within-20-years/}.
+
+\bibitem[Cornwell et~al.(2016)Cornwell, Brown, and Via]{cornwell2016}
+David~A. Cornwell, Richard~A. Brown, and Steve~H. Via.
+\newblock National survey of lead service line occurrence.
+\newblock \emph{Journal -- American Water Works Association}, 108\penalty0
+  (4):\penalty0 E182--E191, 2016.
+\newblock \doi{10.5942/jawwa.2016.108.0086}.
+
+\bibitem[Crump et~al.(2013)Crump, Van~Landingham, Bowers, Cahoy, and
+  Chandalia]{crump2013}
+Kenny~S. Crump, Cynthia Van~Landingham, Teresa~S. Bowers, Dexter Cahoy, and
+  Juhi~K. Chandalia.
+\newblock A statistical reevaluation of the data used in the {Lanphear et al.}
+  (2005) pooled-analysis that related low levels of blood lead to intellectual
+  deficits in children.
+\newblock \emph{Critical Reviews in Toxicology}, 43\penalty0 (9):\penalty0
+  785--799, 2013.
+\newblock \doi{10.3109/10408444.2013.832726}.
+
+\bibitem[Ehrgott(2005)]{ehrgott2005}
+Matthias Ehrgott.
+\newblock \emph{Multicriteria Optimization}.
+\newblock Springer, Berlin, 2 edition, 2005.
+\newblock \doi{10.1007/3-540-27659-9}.
+
+\bibitem[Haimes et~al.(1971)Haimes, Lasdon, and Wismer]{haimes1971}
+Yacov~Y. Haimes, Leon~S. Lasdon, and David~A. Wismer.
+\newblock On a bicriterion formulation of the problems of integrated system
+  identification and system optimization.
+\newblock \emph{IEEE Transactions on Systems, Man, and Cybernetics},
+  SMC-1\penalty0 (3):\penalty0 296--297, 1971.
+\newblock \doi{10.1109/TSMC.1971.4308298}.
+
+\bibitem[Hanna-Attisha et~al.(2016)Hanna-Attisha, LaChance, Sadler, and
+  Champney~Schnepp]{hannaattisha2016}
+Mona Hanna-Attisha, Jenny LaChance, Richard~Casey Sadler, and Allison
+  Champney~Schnepp.
+\newblock Elevated blood lead levels in children associated with the {Flint}
+  drinking water crisis: A spatial analysis of risk and public health response.
+\newblock \emph{American Journal of Public Health}, 106\penalty0 (2):\penalty0
+  283--290, 2016.
+\newblock \doi{10.2105/AJPH.2015.303003}.
+
+\bibitem[{HM Treasury}(2022)]{hmt2022}
+{HM Treasury}.
+\newblock {The Green Book}: Central government guidance on appraisal and
+  evaluation.
+\newblock Technical report, HM Treasury, London, 2022.
+
+\bibitem[Huynh et~al.(2024)Huynh, Chin, and Kiang]{huynh2024}
+Benjamin~Q. Huynh, Elizabeth~T. Chin, and Mathew~V. Kiang.
+\newblock Estimated childhood lead exposure from drinking water in {Chicago}.
+\newblock \emph{JAMA Pediatrics}, 178\penalty0 (5):\penalty0 473, 2024.
+\newblock \doi{10.1001/jamapediatrics.2024.0133}.
+
+\bibitem[{Illinois General Assembly}(2021)]{ilga2021lslrna}
+{Illinois General Assembly}.
+\newblock {Lead Service Line Replacement and Notification Act}, 415 {ILCS}
+  5/17.12 ({Public Act} 102-0613), 2021.
+\newblock Effective January 1, 2022.
+
+\bibitem[{Inside Climate News, Grist, and WBEZ}(2025)]{icn2025data}
+{Inside Climate News, Grist, and WBEZ}.
+\newblock Chicago water service lines data processing: 2025 inventory, geocoded
+  service lines and tract aggregates.
+\newblock GitHub repository
+  InsideClimateNews/2025-08-chicago-lead-service-lines, commit 5b3a5d6, 2025.
+\newblock URL
+  \url{https://github.com/InsideClimateNews/2025-08-chicago-lead-service-lines}.
+
+\bibitem[{Inside Climate News, WBEZ, and Grist}(2026)]{icn2026cost}
+{Inside Climate News, WBEZ, and Grist}.
+\newblock Why is it so expensive to replace lead pipes in {Chicago}?, June
+  2026.
+\newblock URL
+  \url{https://insideclimatenews.org/news/30062026/chicago-lead-pipe-replacement-cost/}.
+
+\bibitem[Lanphear et~al.(2005)Lanphear, Hornung, Khoury, Yolton, Baghurst,
+  Bellinger, Canfield, Dietrich, Bornschein, Greene, Rothenberg, Needleman,
+  Schnaas, Wasserman, Graziano, and Roberts]{lanphear2005}
+Bruce~P. Lanphear, Richard Hornung, Jane Khoury, Kimberly Yolton, Peter
+  Baghurst, David~C. Bellinger, Richard~L. Canfield, Kim~N. Dietrich, Robert
+  Bornschein, Tom Greene, Stephen~J. Rothenberg, Herbert~L. Needleman, Lourdes
+  Schnaas, Gail Wasserman, Joseph Graziano, and Russell Roberts.
+\newblock Low-level environmental lead exposure and children's intellectual
+  function: An international pooled analysis.
+\newblock \emph{Environmental Health Perspectives}, 113\penalty0 (7):\penalty0
+  894--899, 2005.
+\newblock \doi{10.1289/ehp.7688}.
+
+\bibitem[Lanphear et~al.(2018)Lanphear, Rauch, Auinger, Allen, and
+  Hornung]{lanphear2018}
+Bruce~P. Lanphear, Stephen Rauch, Peggy Auinger, Ryan~W. Allen, and Richard~W.
+  Hornung.
+\newblock Low-level lead exposure and mortality in {US} adults: A
+  population-based cohort study.
+\newblock \emph{The Lancet Public Health}, 3\penalty0 (4):\penalty0 e177--e184,
+  2018.
+\newblock \doi{10.1016/S2468-2667(18)30025-2}.
+
+\bibitem[Lanphear et~al.(2019)Lanphear, Hornung, Khoury, Yolton, Baghurst,
+  Bellinger, Canfield, Dietrich, Bornschein, Greene, Rothenberg, Needleman,
+  Schnaas, Wasserman, Graziano, and Roberts]{lanphear2019}
+Bruce~P. Lanphear, Richard Hornung, Jane Khoury, Kimberly Yolton, Peter
+  Baghurst, David~C. Bellinger, Richard~L. Canfield, Kim~N. Dietrich, Robert
+  Bornschein, Tom Greene, Stephen~J. Rothenberg, Herbert~L. Needleman, Lourdes
+  Schnaas, Gail Wasserman, Joseph Graziano, and Russell Roberts.
+\newblock Erratum: ``low-level environmental lead exposure and children's
+  intellectual function: An international pooled analysis''.
+\newblock \emph{Environmental Health Perspectives}, 127\penalty0 (9):\penalty0
+  099001, 2019.
+\newblock \doi{10.1289/EHP5685}.
+
+\bibitem[Mavrotas(2009)]{mavrotas2009}
+George Mavrotas.
+\newblock Effective implementation of the $\varepsilon$-constraint method in
+  multi-objective mathematical programming problems.
+\newblock \emph{Applied Mathematics and Computation}, 213\penalty0
+  (2):\penalty0 455--465, 2009.
+\newblock \doi{10.1016/j.amc.2009.03.037}.
+
+\bibitem[Mitchell et~al.(2011)Mitchell, O'Sullivan, and
+  Dunning]{mitchell2011pulp}
+Stuart Mitchell, Michael O'Sullivan, and Iain Dunning.
+\newblock {PuLP}: A linear programming toolkit for {Python}.
+\newblock Department of Engineering Science, The University of Auckland, 2011.
+
+\bibitem[{National Center for Health Statistics}(2026)]{nchs2024}
+{National Center for Health Statistics}.
+\newblock Leading causes of death ({FastStats}), from {Mortality in the United
+  States, 2024}.
+\newblock Centers for Disease Control and Prevention, 2026.
+\newblock URL
+  \url{https://www.cdc.gov/nchs/fastats/leading-causes-of-death.htm}.
+
+\bibitem[{Natural Resources Defense Council}(2026)]{nrdc2026}
+{Natural Resources Defense Council}.
+\newblock {American Water Works Association v. EPA (Lead and Copper Rule
+  Improvements)}, 2026.
+\newblock URL
+  \url{https://www.nrdc.org/court-battles/american-water-works-association-et-v-epa-lead-and-copper-rule-improvements}.
+
+\bibitem[{Office of Management and Budget}(2003)]{omb2003a4}
+{Office of Management and Budget}.
+\newblock {Circular A-4: Regulatory Analysis}.
+\newblock Technical report, Executive Office of the President, Washington, DC,
+  2003.
+
+\bibitem[{Office of Management and Budget}(2023)]{omb2023a4}
+{Office of Management and Budget}.
+\newblock {Circular A-4: Regulatory Analysis} (revised).
+\newblock Technical report, Executive Office of the President, Washington, DC,
+  2023.
+
+\bibitem[Ruckart et~al.(2021)Ruckart, Jones, Courtney, LeBlanc, Jackson,
+  Karwowski, Cheng, Allwood, Svendsen, and Breysse]{ruckart2021}
+Perri~Z. Ruckart, Robert~L. Jones, Joseph~G. Courtney, Tanya~T. LeBlanc, Wilma
+  Jackson, Mateusz~P. Karwowski, Po-Yung Cheng, Paul Allwood, Erik~R. Svendsen,
+  and Patrick~N. Breysse.
+\newblock Update of the blood lead reference value -- {United States}, 2021.
+\newblock \emph{MMWR. Morbidity and Mortality Weekly Report}, 70\penalty0
+  (43):\penalty0 1509--1512, 2021.
+\newblock \doi{10.15585/mmwr.mm7043a4}.
+
+\bibitem[Sampson and Winter(2016)]{sampson2016}
+Robert~J. Sampson and Alix~S. Winter.
+\newblock The racial ecology of lead poisoning: Toxic inequality in {Chicago}
+  neighborhoods, 1995--2013.
+\newblock \emph{Du Bois Review: Social Science Research on Race}, 13\penalty0
+  (2):\penalty0 261--283, 2016.
+\newblock \doi{10.1017/S1742058X16000151}.
+
+\bibitem[Smith(1956)]{smith1956}
+Wayne~E. Smith.
+\newblock Various optimizers for single-stage production.
+\newblock \emph{Naval Research Logistics Quarterly}, 3\penalty0
+  (1--2):\penalty0 59--66, 1956.
+\newblock \doi{10.1002/nav.3800030106}.
+
+\bibitem[Troesken(2006)]{troesken2006}
+Werner Troesken.
+\newblock \emph{The Great Lead Water Pipe Disaster}.
+\newblock MIT Press, Cambridge, MA, 2006.
+
+\bibitem[{U.S. Department of Housing and Urban
+  Development}(2020)]{hud2020section3}
+{U.S. Department of Housing and Urban Development}.
+\newblock Enhancing and streamlining the implementation of {Section 3}
+  requirements for creating economic opportunities for low- and very low-income
+  persons and eligible businesses, 24 {CFR} part 75.
+\newblock Federal Register 85 FR 61524, 2020.
+
+\bibitem[{U.S. Environmental Protection Agency}(2024{\natexlab{a}})]{epa2024ea}
+{U.S. Environmental Protection Agency}.
+\newblock Economic analysis for the final {Lead and Copper Rule Improvements}.
+\newblock Technical Report October 2024, Office of Ground Water and Drinking
+  Water, Washington, DC, 2024{\natexlab{a}}.
+\newblock URL
+  \url{https://www.epa.gov/system/files/documents/2024-10/508_lcri_final_ea_10-21-2024.pdf}.
+
+\bibitem[{U.S. Environmental Protection
+  Agency}(2024{\natexlab{b}})]{epa2024lcri}
+{U.S. Environmental Protection Agency}.
+\newblock {National Primary Drinking Water Regulations for Lead and Copper:
+  Improvements (LCRI)}.
+\newblock Federal Register 89 FR 86418, Document 2024-23549, October
+  2024{\natexlab{b}}.
+\newblock URL
+  \url{https://www.federalregister.gov/documents/2024/10/30/2024-23549/national-primary-drinking-water-regulations-for-lead-and-copper-improvements-lcri}.
+
+\bibitem[Wagstaff et~al.(1991)Wagstaff, Paci, and van Doorslaer]{wagstaff1991}
+Adam Wagstaff, Pierella Paci, and Eddy van Doorslaer.
+\newblock On the measurement of inequalities in health.
+\newblock \emph{Social Science \& Medicine}, 33\penalty0 (5):\penalty0
+  545--557, 1991.
+\newblock \doi{10.1016/0277-9536(91)90212-U}.
+
+\bibitem[{WTTW News}(2025)]{wttw2025}
+{WTTW News}.
+\newblock Crews have replaced less than 4\% of lead service lines shown to
+  contaminate tap water in {Chicago} homes in 5 years, October 2025.
+\newblock URL
+  \url{https://news.wttw.com/2025/10/24/crews-have-replaced-less-4-lead-service-lines-shown-contaminate-tap-water-chicago-homes}.
+
+\bibitem[{WTTW News / Capitol News Illinois}(2024)]{wttw2024}
+{WTTW News / Capitol News Illinois}.
+\newblock As {Illinois} continues to inventory lead pipes, full replacement
+  deadlines are decades away, April 2024.
+\newblock URL
+  \url{https://news.wttw.com/2024/04/13/illinois-continues-inventory-lead-pipes-full-replacement-deadlines-are-decades-away}.
+
+\end{thebibliography}

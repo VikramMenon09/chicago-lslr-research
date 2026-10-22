@@ -1,0 +1,22 @@
+cached  CM
+solved  HW         Optimal       209s  gap=0.0031059682795734774
+solved  HW_oneoff  Infeasible      4s  gap=None
+solved  EW         Optimal       229s  gap=0.025859168238614946
+solved  EWc        Optimal       221s  gap=0.015666844161305486
+solved  DW         Optimal       211s  gap=0.0020699112124701797
+solved  HW_r2      Optimal       209s  gap=0.0033866727525753097
+solved  HW_r7      Optimal        13s  gap=0.0032799883248186977
+solved  HW_child   Optimal       211s  gap=0.024157073644370346
+solved  HW_high    Optimal       210s  gap=0.001815390685078967
+solved  HW_huynh   Optimal       210s  gap=0.0021898922375945874
+solved  EPS_0      Optimal       210s  gap=0.002919640751913933
+solved  EPS_1      Optimal       211s  gap=0.003360678919731686
+solved  EPS_2      Optimal       210s  gap=0.002407943925804308
+solved  EPS_3      Optimal       210s  gap=0.0027465336152907877
+solved  EPS_4      Infeasible     53s  gap=None
+solved  EPS_5      Infeasible     35s  gap=None
+solved  DOM_0      Optimal       210s  gap=0.0027549450227289008
+solved  DOM_1      Optimal       211s  gap=0.0031943953051718995
+solved  DOM_2      Optimal       210s  gap=0.003069832850284475
+solved  DOM_3      Optimal       209s  gap=0.0035944221901835272
+all scenarios done
