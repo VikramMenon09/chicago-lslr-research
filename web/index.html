@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chicago Lead Line Explorer</title>
+<meta name="description" content="Interactive explorer for an optimization study of how Chicago could schedule ~412,000 lead service line replacements: who waits, what it costs, and what it is worth.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="wrap hero">
+  <p class="eyebrow">Research explorer · Chicago lead service lines</p>
+  <h1>Who gets new pipes first?</h1>
+  <p class="lede">Chicago has to dig up and replace roughly 412,000 lead or possibly-lead water service lines over about twenty years. Budgets and crews are limited, so the <em>order</em> of the work decides how long each neighborhood keeps drinking through lead, what the program costs, and whether the deadline is met. This page lets you explore the schedules computed in the research paper <cite>Algorithmic Equity and Capital Allocation</cite>.</p>
+  <div class="tiles" id="headline"></div>
+  <p class="links">
+    <a href="https://github.com/VikramMenon09/chicago-lslr-research">Code &amp; data on GitHub</a>
+    <a href="https://github.com/VikramMenon09/chicago-lslr-research/blob/main/paper/main.pdf">Read the manuscript (PDF)</a>
+    <a href="#data-notes">What is observed vs. modeled</a>
+  </p>
+</header>
+
+<nav class="scen-bar" aria-label="Scenario">
+  <div class="wrap scen-inner">
+    <label for="scenario">Scenario</label>
+    <select id="scenario"></select>
+    <p id="scen-desc" class="scen-desc"></p>
+  </div>
+</nav>
+
+<main class="wrap">
+  <section>
+    <p id="scen-desc-m" class="sub mobile-only"></p>
+    <div class="tiles small" id="scen-tiles"></div>
+  </section>
+
+  <section id="map-section">
+    <h2>Map: replacement timing by community area</h2>
+    <p class="sub">The model schedules work across 160 corridors; here each community area shows the line-weighted result for the lines inside it. Switch the layer to see the observed data the schedules respond to. Hover or tap an area for details.</p>
+    <div class="controls">
+      <label>Layer
+        <select id="layer"></select>
+      </label>
+      <label id="year-ctl" class="range">By end of <output id="year-out">2036</output>
+        <input type="range" id="year" min="2027" max="2048" value="2036" step="1">
+      </label>
+    </div>
+    <div class="map-grid">
+      <figure class="map-fig">
+        <svg id="map" role="img" aria-label="Map of Chicago community areas"></svg>
+        <div id="map-legend" class="legend"></div>
+        <figcaption id="map-note" class="note"></figcaption>
+      </figure>
+      <aside id="ca-panel" class="panel" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pace: lines replaced each year</h2>
+    <p class="sub">Annual replacements under the selected scenario compared with the status quo. Optimized schedules must finish within the 20-year LCRI window (2027–2046); heuristic schedules run until they are done.</p>
+    <div id="pace" class="chart"></div>
+  </section>
+
+  <section>
+    <h2>What each schedule costs society</h2>
+    <p class="sub">Present value at a 3% discount rate, in billions of 2022 dollars. <strong>Health harm</strong> is the EPA-method value of IQ loss in children and cardiovascular deaths in adults while lines stay in the ground; <strong>cost</strong> is the construction bill. Lower total is better.</p>
+    <div id="social" class="chart"></div>
+  </section>
+
+  <section>
+    <h2>Efficiency vs. equity frontier</h2>
+    <p class="sub">Each point is a schedule. The horizontal axis is the <strong>Q5 wait gap</strong>: how many years earlier (negative) or later (positive) the most socially vulnerable fifth of lines are reached than the citywide average. The blue line forces the vulnerable to be served even earlier than the health-welfare optimum; the gray dashed line forces them later. Both cost more, so delaying the vulnerable is never efficient here.</p>
+    <div id="frontier" class="chart"></div>
+  </section>
+
+  <section>
+    <h2>Is replacement worth it? Benefit–cost per line</h2>
+    <p class="sub">Benefit–cost ratio of replacing one average line: 30 years of avoided harm divided by the cost per line. Above 1 means benefits exceed costs. Choose a discount rate; the three benefit tiers bracket how much adult heart-disease mortality is counted.</p>
+    <div class="controls" id="rate-ctl" role="radiogroup" aria-label="Discount rate"></div>
+    <div class="two">
+      <div><h3>By cost per line</h3><div id="bcr" class="chart"></div></div>
+      <div><h3>One-way sensitivity at $31k, 3%</h3><div id="tornado" class="chart"></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Financing: what a $31,000 line really costs</h2>
+    <p class="sub">Present value of paying for one $31,000 line in cash, with a subsidized state revolving fund loan (1.5%, 30 years), or with a water revenue bond (5%, 30 years), evaluated at each social discount rate. Cheap SRF money lowers the real cost; bond financing raises it unless society discounts the future heavily.</p>
+    <div id="finance" class="chart"></div>
+  </section>
+
+  <section>
+    <h2>How sure are these results?</h2>
+    <p class="sub" id="psa-sub"></p>
+    <div class="two">
+      <div><h3>Saving from the health-welfare schedule</h3><div id="psa-hist" class="chart"></div></div>
+      <div><h3>Per-line benefit–cost ratio at $31k</h3><div id="psa-cdf" class="chart"></div></div>
+    </div>
+  </section>
+
+  <section id="data-notes">
+    <h2>What is observed and what is modeled</h2>
+    <div class="two notes">
+      <div>
+        <h3><span class="tag obs">Observed</span> public data</h3>
+        <ul>
+          <li><strong>2025 Chicago Department of Water Management service-line inventory</strong>, geocoded by Inside Climate News, Grist and WBEZ: 491,406 lines after cleaning, 412,433 needing action (lead, galvanized requiring replacement, or unknown/suspected lead), plus 2021–2025 replacements and refusals of access.</li>
+          <li><strong>CDC/ATSDR Social Vulnerability Index 2022</strong> (tract level).</li>
+          <li><strong>American Community Survey 2019–2023</strong>: children, adults, renters, building size, income, language.</li>
+          <li><strong>HOLC redlining grades</strong> (1930s), crosswalked to tracts.</li>
+          <li><strong>CDPH childhood blood-lead screening</strong> by community area, 1999–2013 (used only to validate, not to schedule).</li>
+          <li><strong>Reported costs</strong>: about $31k per line on average, $34k in block programs, $39k one-off (city figures as reported in 2026); EPA's $4,700 national estimate for comparison.</li>
+          <li>Community-area boundaries: City of Chicago Data Portal.</li>
+        </ul>
+      </div>
+      <div>
+        <h3><span class="tag mod">Modeled</span> assumptions &amp; estimates</h3>
+        <ul>
+          <li><strong>Unknown materials</strong> are imputed with a spatially cross-validated classifier (AUC 0.90).</li>
+          <li><strong>Exposure</strong>: how much a lead line raises blood lead (children +0.8 µg/dL, adults +0.2 µg/dL) is an assumption, varied in the uncertainty analysis.</li>
+          <li><strong>Valuation</strong> follows EPA's 2024 LCRI Economic Analysis (value per IQ point, cardiovascular mortality functions, value of a statistical life).</li>
+          <li><strong>Operations</strong>: crews of 15,000 rising to 24,000 lines a year; capital budgets of $450M rising $40M a year to $820M; a $1.5M mobilization charge per block program; at least 250 lines per block batch.</li>
+          <li><strong>Corridors</strong>: lines are grouped into 160 k-means corridors of ~2,600 lines; the map rolls corridor schedules up to community areas.</li>
+          <li><strong>Discount and financing rates</strong> (2/3/7%; SRF 1.5%, bonds 5%) and the equity penalty ($4,000 per vulnerability-weighted line-year) are policy assumptions.</li>
+          <li>Every schedule here is a model output, not a city plan.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <p>All numbers come from the study's pipeline outputs (<code>data/processed/</code>), exported by <code>web/export.py</code>; nothing on this page is re-estimated. Schedules are solved as a multi-objective mixed-integer linear program (PuLP/CBC) over 160 corridors × 20 years. <a href="https://github.com/VikramMenon09/chicago-lslr-research">Source on GitHub</a>.</p>
+</footer>
+
+<div id="tip" class="tip" role="tooltip" hidden></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
