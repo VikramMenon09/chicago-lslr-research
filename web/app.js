@@ -60,7 +60,7 @@
     initControls(); renderAll();
     let t; addEventListener("resize", () => { clearTimeout(t); t = setTimeout(renderAll, 150); });
     matchMedia("(prefers-color-scheme: dark)").addEventListener("change", renderAll);
-  }).catch((e) => { document.querySelector("main").insertAdjacentHTML("afterbegin", `<p>Could not load data: ${e}</p>`); });
+  }).catch((e) => { document.querySelector("main").insertAdjacentHTML("afterbegin", `<p role="alert">Could not load the study data. Reload the page to try again. (${e})</p>`); const h = $("#headline"); if (h) { h.removeAttribute("aria-busy"); h.innerHTML = ""; } });
 
   function initControls() {
     const sel = $("#scenario");
@@ -105,6 +105,7 @@
       [`${f2(d3.min(b31))}–${f2(d3.max(b31))}`, "benefit–cost ratio per $31k line across every benefit tier and discount rate tested"],
     ];
     $("#headline").innerHTML = tiles.map(([v, k]) => `<div class="tile"><div class="v">${v}</div><div class="k">${k}</div></div>`).join("");
+    $("#headline").removeAttribute("aria-busy");
   }
 
   function renderScenTiles() {

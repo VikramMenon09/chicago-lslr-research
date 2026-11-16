@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Chicago Lead Line Explorer</title>
 <meta name="description" content="Interactive explorer for an optimization study of how Chicago could schedule ~412,000 lead service line replacements: who waits, what it costs, and what it is worth.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chicago Lead Line Explorer">
+<meta property="og:description" content="Interactive explorer for an optimization study of how Chicago could schedule about 412,000 lead service line replacements: who waits, what it costs, and what it is worth.">
+<meta property="og:image" content="og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chicago Lead Line Explorer">
+<meta name="twitter:description" content="Who gets new pipes first? Explore optimized schedules for replacing Chicago's lead service lines.">
+<meta name="twitter:image" content="og.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +23,7 @@
   <p class="eyebrow">Research explorer · Chicago lead service lines</p>
   <h1>Who gets new pipes first?</h1>
   <p class="lede">Chicago has to dig up and replace roughly 412,000 lead or possibly-lead water service lines over about twenty years. Budgets and crews are limited, so the <em>order</em> of the work decides how long each neighborhood keeps drinking through lead, what the program costs, and whether the deadline is met. This page lets you explore the schedules computed in the research paper <cite>Algorithmic Equity and Capital Allocation</cite>.</p>
-  <div class="tiles" id="headline"></div>
+  <div class="tiles" id="headline" aria-busy="true"><p class="loading">Loading study results…</p></div>
   <p class="links">
     <a href="https://github.com/VikramMenon09/chicago-lslr-research">Code &amp; data on GitHub</a>
     <a href="https://github.com/VikramMenon09/chicago-lslr-research/blob/main/paper/main.pdf">Read the manuscript (PDF)</a>
@@ -130,11 +141,12 @@
 </main>
 
 <footer class="wrap foot">
-  <p>All numbers come from the study's pipeline outputs (<code>data/processed/</code>), exported by <code>web/export.py</code>; nothing on this page is re-estimated. Schedules are solved as a multi-objective mixed-integer linear program (PuLP/CBC) over 160 corridors × 20 years. <a href="https://github.com/VikramMenon09/chicago-lslr-research">Source on GitHub</a>.</p>
+  <p>&copy; <span id="yr">2026</span> Vikram Menon. All numbers come from the study's pipeline outputs (<code>data/processed/</code>), exported by <code>web/export.py</code>; nothing on this page is re-estimated. Schedules are solved as a multi-objective mixed-integer linear program (PuLP/CBC) over 160 corridors × 20 years. <a href="https://github.com/VikramMenon09/chicago-lslr-research">Source on GitHub</a>.</p>
 </footer>
 
 <div id="tip" class="tip" role="tooltip" hidden></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>document.getElementById("yr").textContent=new Date().getFullYear();</script>
 <script src="app.js"></script>
 </body>
 </html>
